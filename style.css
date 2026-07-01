@@ -1,0 +1,51 @@
+
+
+head {
+    background-color: rgb(39, 37, 37);
+}
+
+body{
+    background-color:  rgb(39, 37, 37);
+    color: white
+}
+
+title{
+    text-align: center;
+}
+
+
+.head-content{
+    display : flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* gap: 10px 10px; */
+}
+
+.body-content{
+    display : flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px 10px;
+}
+
+.sub-content{
+    display : flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px 10px;
+
+}
+
+.content{
+    /* /background-color: rgb(51, 58, 58); */
+    /* border: 1px outset rgb(155, 150, 150); */
+    line-height: 25px;
+    text-align: center;
+}
+
