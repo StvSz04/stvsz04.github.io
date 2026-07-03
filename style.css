@@ -6,46 +6,75 @@ head {
 
 body{
     background-color:  rgb(39, 37, 37);
-    color: white
+    color: white;
+    margin:0px;
+    padding: 0px;
 }
 
 title{
     text-align: center;
 }
 
-
-.head-content{
-    display : flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    /* gap: 10px 10px; */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.body-content{
-    display : flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 10px 10px;
+a:link, a:visited {
+    color: #ffffff;
+    text-decoration: none; 
 }
 
-.sub-content{
-    display : flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 10px 10px;
 
+/* Top navigation bar Section */
+.nav{
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 37, 37);
+    padding: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(147, 134, 250);
 }
 
-.content{
-    /* /background-color: rgb(51, 58, 58); */
-    /* border: 1px outset rgb(155, 150, 150); */
-    line-height: 25px;
+.header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;    
+}
+
+.picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+/* Middle content: left navigation and Welcome content */
+
+.body-container{
+    display: flex;
+}
+
+.side-bar{
+    background-color: rgb(39, 37, 37);
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: rgb(147, 134, 250);
+    height: 100vh;  
+    width: 100px; 
+    padding: 5px;
+    flex-shrink: 0; 
+}
+
+.side-bar ul li{
+    margin-bottom: 10px;
+}
+
+.welcome-content{
     text-align: center;
+    padding: 60px;
+    max-width: 800px;
 }
-
