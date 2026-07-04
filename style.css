@@ -56,6 +56,8 @@ a:link, a:visited {
 
 .body-container{
     display: flex;
+    min-height: 100vh;
+    align-items: stretch;
 }
 
 .side-bar{
@@ -63,11 +65,11 @@ a:link, a:visited {
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: #6366f1;
-    height: 100vh;  
     width: 100px; 
     padding: 5px;
     flex-shrink: 0; 
     text-align: center;
+    align-self: stretch;
 }
 
 .side-bar ul li{
@@ -83,14 +85,14 @@ a:link, a:visited {
 }
 
 .welcome-content{
-    text-align: center;
+    /* text-align: center; */
     padding: 10px;
     width: 100%;
 }
 
 
 .weekly{
-    text-align: center;
+    /* text-align: center; */
     padding: 10px;
     width: 100%;
 }
@@ -98,6 +100,6 @@ a:link, a:visited {
 .weekly ul{
   list-style-type:circle;
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
   list-style-position: inside;
 }
