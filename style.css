@@ -1,12 +1,12 @@
 
 
 head {
-    background-color: rgb(39, 37, 37);
+    background-color: #f8fafc;
 }
 
 body{
-    background-color:  rgb(39, 37, 37);
-    color: white;
+    background-color: #f8fafc;
+    color: rgb(0, 0, 0);
     margin:0px;
     padding: 0px;
 }
@@ -22,19 +22,19 @@ ul {
 }
 
 a:link, a:visited {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none; 
 }
 
 
+
 /* Top navigation bar Section */
 .nav{
-    color: rgb(255, 255, 255);
-    background-color: rgb(39, 37, 37);
+    background-color: #f8fafc;
     padding: 10px;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgb(147, 134, 250);
+    border-bottom-color: #6366f1;
 }
 
 .header-ul{
@@ -46,8 +46,8 @@ a:link, a:visited {
 }
 
 .picture{
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-radius: 50px;
 }
 
@@ -59,22 +59,45 @@ a:link, a:visited {
 }
 
 .side-bar{
-    background-color: rgb(39, 37, 37);
-    border-right-width: 2px;
+    background-color: #f8fafc;
+    border-right-width: 1px;
     border-right-style: solid;
-    border-right-color: rgb(147, 134, 250);
+    border-right-color: #6366f1;
     height: 100vh;  
     width: 100px; 
     padding: 5px;
     flex-shrink: 0; 
+    text-align: center;
 }
 
 .side-bar ul li{
     margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.side-bar ul li:hover {
+    margin-bottom: 10px;
+    background-color: rgb(126, 126, 126);
+   
 }
 
 .welcome-content{
     text-align: center;
-    padding: 60px;
-    max-width: 800px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.weekly{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.weekly ul{
+  list-style-type:circle;
+  padding: 0;
+  text-align: center;
+  list-style-position: inside;
 }
