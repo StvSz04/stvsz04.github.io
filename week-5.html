@@ -4,6 +4,7 @@
 <head>
     <title>Steven Sanchez - Summer 2026 DREU Project</title>
     <link rel="stylesheet" href="style.css">
+    <script src="sidebar.js" defer></script>
 </head>
 
 
@@ -27,21 +28,49 @@
 
         <div class="weekly">
             <h2>Week 5: June 29 - July 5</h2>
-            <p> The entry for this week will be available on July 6th.</p>
-            <!-- <h2>Week _</h2>
             <h3> Goals</h3>
             <ul>
-                <li></li>
+                <li>Meet with lab group to discuss MPEG training acceleration project.</li>
+                <li>Replicate current progress of MPEG training acceleration project.</li>
+                <li>Researched MPEG compression.</li>
+                <li>Research random sampling in MPEG videos.</li>
             </ul>
 
             <h3> Approach and implementation</h3>
             <p>
+                On Tuesday and Thursday I met with my lab to discuss the next project we are working on. The
+                goal of this project is to explore the possibility of storing neural network training data
+                in MPEG format to accelerate the training process. The key insight of using MPEG is the valuable
+                compression it offers, allowing us to reduce the size of training datasets and more effectively store it in vram.
+            </p>
+
+            <p> 
+                The MPEG training acceleration project has already had some progress before I joined it, so my first
+                task was to replicate the results up till now. To do this I cloned the project repository into my  WSL(Windows Subsystem for Linux)
+                environment. Next I ran the needed tests and documented the results in a excel spreadsheet to share with the team.
+            </p>
+
+            <p>
+                To assist with my understanding of the project I spent time this week researching MPEG compression.
+                Taking notes on key topics such as spatial compression, temporal compression, I-frames,P-frames, and B-frames. This
+                research has allowed me to have a solid understanding of MPEGs.
+            </p>
+
+            <p>
+                Lastly, I spent the end of the week researching how the lab can implement random sampling for 
+                MPEG videos. This is important for our problem because we need to make sure that our MPEG videos
+                do not introduce bias during the training process of a model, and a way to combat this is random sampling
+                from the dataset. The current solution that I found is using the framework FFmpeg. I will present this
+                to my mentor in the next weekly meeting.
             </p>
 
             <h3> Results</h3>
              <ul>
-                <li></li>
-            </ul> -->
+                <li>Met with team and agreed on project scope and implementation details.</li>
+                <li>Replicated current progress of MPEG training acceleration project.</li>
+                <li>Researched MPEG compression.</li>
+                <li>Researched random sampling in MPEG videos.</li>
+            </ul>
 
         </div>
 
