@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Steven Sanchez - Summer 2026 DREU Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sidebar.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <!-- Nav bar -->
+    <div class="nav"> 
+        <ul class="header-ul">
+            <li><img src="image.png" class="picture"></li>
+            <li> 
+                <h1>Steven Sanchez</h1> 
+                <h5>DREU 2026 @ Auburn University</h5> 
+            </li>
+        </ul>
+    </div>
+
+    <!-- Body content: left nav bar and welcome section -->
+    <div class="body-container">
+        
+        <div id="sidebar-container"></div>
+
+        <div class="weekly">
+            <h2>Week 8: July 20 - 26</h2>
+            <h3> Goals</h3>
+            <ul>
+                <li>Continue working on refactoring the repository.</li>
+                <li>Implement the deletion of nodes.</li>
+                <li>Review ISSTA submission comments.</li>
+            </ul>
+
+            <h3> Approach and implementation</h3>
+            <p>
+                To begin the week, I reviewed and merged my lab partner's code into the repository. The most important change I made while reviewing
+                was making an adjustment to how the model was being used to make predictions.
+                The adjustment consisted of changing the use of the keras model <code>predict()</code> method to <code>__call__()</code>, as this magic method is far more
+                efficient for small inputs, this resulted in a speed-up from ~15 minutes of execution time to ~1 minute.
+            </p>
+
+            <p>
+                Next, I transitioned to implementing the deletion of nodes within the neural network. In the original repository, the authors
+                chose to just zero out node weights and biases, effectively deleting them. However, for efficiency concerns in our project,
+                we must actually delete the nodes. To do this, I wrote a script to parse through layer weight and bias matrices and remove nodes that
+                are zeroed out and their corresponding input rows for the next layer. Next, the script iteratively builds a new model using new weight matrices.
+            </p>
+            
+            <p>
+                Lastly, I reviewed the comments that the ISSTA reviewers left on our submission. Ultimately,
+                our paper was rejected for publication, but reviewing the comments gave important insights that
+                I can use in future work. Overall, the experience of writing a research paper was a great learning
+                experience.
+            </p>
+
+            <h3> Results</h3>
+             <ul>
+                <li>Refactored the repository.</li>
+                <li>Implemented the deletion of nodes.</li>
+                <li>Reviewed ISSTA submission comments.</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
