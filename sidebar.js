@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="week-7.html">Week 7</a></li>
                     <li><a href="week-8.html">Week 8</a></li>
                     <li><a href="week-9.html">Week 9</a></li>
+                    <li><a href="week-10.html">Week 10</a></li>
                 </ul>
             </div>
         `;
